@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dealership"
+    }
+  },
+  "defaultProject": "dealership",
+  "cli": {
+    "analytics": "86dc55ec-5a7c-413d-a070-7179fb00bcf6"
+  }
 }
