@@ -2,12 +2,15 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MaterialModule } from './material.module';
+
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InventoryModule } from './inventory/inventory.module';
+import { InventoryModule } from './inventory/inventory.module';;
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { InventoryModule } from './inventory/inventory.module';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
