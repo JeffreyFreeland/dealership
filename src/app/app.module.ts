@@ -2,11 +2,7 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-// TODO: Put these in a material module instead. 
-import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-
+import { MaterialModule } from './material.module';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -29,9 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
       InMemoryDataService, { dataEncapsulation: false }
     ),
     BrowserAnimationsModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
