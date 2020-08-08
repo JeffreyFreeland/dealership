@@ -9,8 +9,10 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InventoryModule } from './inventory/inventory.module';;
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { InventoryModule } from './inventory/inventory.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardModule } from './dashboard/dashboard.module';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     ),
     BrowserAnimationsModule,
     MaterialModule,
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
