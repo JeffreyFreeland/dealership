@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { MaterialModule } from '../material.module';
+import { MaterialModule } from '../common/modules/material.module';
 
 @NgModule({
   declarations: [DashboardComponent],
