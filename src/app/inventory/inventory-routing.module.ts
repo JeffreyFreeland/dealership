@@ -5,7 +5,13 @@ import { CreateCarComponent } from './create-car/create-car.component';
 
 
 const routes: Routes = [
-  { path: 'inventory/create', component: CreateCarComponent },
+{
+    path: 'vehicles',
+    children: [
+      { path: 'create', component: CreateCarComponent },
+    ]
+}
+  
 ];
 
 @NgModule({
