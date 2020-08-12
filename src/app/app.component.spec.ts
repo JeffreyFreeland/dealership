@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('p').textContent).toContain('Main page works');
+    expect(compiled.querySelector('mat-toolbar').textContent).toContain('Dealership');
   });
 });
