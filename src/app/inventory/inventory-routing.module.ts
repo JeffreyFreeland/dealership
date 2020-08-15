@@ -11,6 +11,7 @@ const routes: Routes = [
     children: [
       { path: 'list', component: ListCarsComponent },
       { path: 'create', component: CreateCarComponent },
+      { path: '', redirectTo: 'list', pathMatch: 'full' },
     ]
 }
   
