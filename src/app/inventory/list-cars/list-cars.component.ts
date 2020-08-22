@@ -11,6 +11,8 @@ import { CarService } from '../car.service';
 export class ListCarsComponent implements OnInit {
 
   vehicles: Car[] = [];
+  displayedColumns: string[] = ['id', 'name'];
+
 
   constructor(private carService: CarService) { }
 
