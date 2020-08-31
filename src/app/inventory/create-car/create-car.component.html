@@ -1,4 +1,7 @@
-﻿<form>
-  <p>Form stuff goes here soon</p>
+﻿<form [formGroup]="vehicleForm" (ngSubmit)="create()">
+  <p>
+    <label for="name">Name: </label>
+    <input name="name" formControlName="name" type="text" placeholder="Vehicle Name">
+  </p>
+  <button mat-raised-button color="primary" type="submit">Create</button>
 </form>
-<button (click)="getCars()">Click Me</button>

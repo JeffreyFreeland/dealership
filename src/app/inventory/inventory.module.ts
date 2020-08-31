@@ -1,5 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from '../common/modules/material.module';
 
@@ -16,7 +17,9 @@ import { ListCarsComponent } from './list-cars/list-cars.component';
   imports: [
     CommonModule,
     InventoryRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class InventoryModule { }

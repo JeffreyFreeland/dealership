@@ -1,4 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { CarService } from '../car.service';
 
@@ -9,13 +10,22 @@ import { CarService } from '../car.service';
 })
 export class CreateCarComponent implements OnInit {
 
-  constructor(private carService: CarService) { }
+  vehicleForm: FormGroup;
+
+  constructor(
+    private carService: CarService,
+    private fb: FormBuilder) { 
+      this.vehicleForm = this.fb.group({
+        name: [],
+      });
+    }
 
   ngOnInit(): void {
   }
 
-  getCars() {
-  
+  create(): void {
+    console.log("Creating a new car!");
+    console.log(this.vehicleForm.value);
   }
 
 }
